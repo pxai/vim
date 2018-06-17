@@ -1,0 +1,10 @@
+This is a Vim Kata, a file that serves as a playground for keeping your vim-foo agile.
+
+Move it -------
+
+You should start moving 
+down 
+down up to the right right right leftleftleft and 
+down up
+and then up
+to the right right right down down up then up

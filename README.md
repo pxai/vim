@@ -94,3 +94,9 @@ vim -p *.js
 :set rules
 :set noruler
 :set ruler! (toggle on/off)
+
+### set colors
+:colorscheme <Tab>
+:colorscheme Ctrl-d
+
+Available colors: blue       darkblue   default    delek      desert     elflord    evening    industry   koehler    monokai    morning    murphy     pablo      peachpuff  ron        shine      slate      torte      zellner
