@@ -90,6 +90,19 @@ vim -p *.js
 - gt, :tabn  move to next tab
 - gT, :tabp  move to previous tab
 
+## Registers
+Deleted/Cut content is saved in registers. You can reuse those parts.
+
+Unnamed " or numbered "1, "2, "3,... or named: "a, "b, "c,...
+" register holds d,c,s,x or y operations.
+:reg to see them
+
+Named registers are:
+"a, "b, "c,...
+"A, "B, "C to append to "a, "b, "c
+
+
+
 ## Settings
 :set rules
 :set noruler
