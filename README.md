@@ -127,11 +127,22 @@ Named registers are:
 "A, "B, "C to append to "a, "b, "c
 
 
+=======
+Commands:
+- :tabedit {file}   edit specified file in new tab
+- :tabfind {file}   open a new tab with filename given, in current path
+- :tabclose         close current tab
+- :tabclose {i}     close i-th tab
+- :tabonly          close all tabs but current
 
 ## Settings
+
+This is how you set/unset/toggle in general
 :set rules
 :set noruler
 :set ruler! (toggle on/off)
+
+:set path=.,,**
 
 ### set colors
 :colorscheme <Tab>
