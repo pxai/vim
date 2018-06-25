@@ -37,8 +37,34 @@ Exit help with q
 - I: insert mode beginning
 - a: append next position
 - A: append end of the line
+- r: replace a character
+- R: enter replace mode
 - o: add new line down
 - O: add new line above
+
+Combinations
+TODO check.
+- 80i\* creates 80 lines in a row
+- 5o# creates 5 lines starting with # (comments)
+
+### Replace mode:
+- R: replace mode
+
+## Change
+- c: change
+- cw: change word
+- cc: change entire line
+
+- gUw : change word Uppercase
+- gUu : change all line Uppercase
+- guw : change word lowercase
+- guu : change all line lowecase
+
+### Combine
+- G : combine lines
+- 3G: combine multiple
+- g J: combine lines without sares
+
 
 ## Undo
 - u
