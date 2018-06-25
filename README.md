@@ -43,9 +43,8 @@ Exit help with q
 - O: add new line above
 
 Combinations
-TODO check.
-- 80i\* creates 80 lines in a row
-- 5o# creates 5 lines starting with # (comments)
+- 80i\* + ESC creates 80 lines in a row
+- 5o# + ESC creates 5 lines starting with # (comments)
 
 ### Replace mode:
 - R: replace mode
