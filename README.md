@@ -64,12 +64,43 @@ Combinations
 - 3G: combine multiple
 - g J: combine lines without sares
 
+## Search/Find/Replace
+### Search
+- f{char}
+- F{char} : search backwards
+- ; look again forward
+- , look again, backwards
+- t{char} : as f, one char before
+- T{char} : same, backwards
+- /{word} : search for word + 
+- n repeat search
+- N repeat search backwards
 
-## Undo
+- d /search $  : deletes until occurrence.
+
+Search options:
+:set is? (incremental search)
+:set nois
+:set hls? set highlight search
+:set nojls
 - u
 - Ctrl-R : redo
 - . : repeat command
 
+- n: repeat
+- N: repeat backwards
+- \*: search word
+- #: search word reverse
+
+### Substitution
+
+- :[range]%s/old/new/[g,i]
+- :%s/var/foo/gi
+
+% means **all lines**
+[range] can be 1,10
+Changing separators:
+- :%s#var#foo#g
 ## Commands format:
 
 [number] operation motion
@@ -144,6 +175,7 @@ This is how you set/unset/toggle in general
 
 :set path=.,,**
 
+:set nu  : setting line numbers
 ### set colors
 :colorscheme <Tab>
 :colorscheme Ctrl-d
