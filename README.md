@@ -5,7 +5,10 @@
 - :q!  quit and don't save changes
 - :ZZ quit and don't save changes
 - :wq! 
+- :w  write changes
 - :e, :edit file
+- :o, :open file
+- :save file
 
 ## Getting help
 - :help
@@ -149,6 +152,36 @@ let @c='0i# ^[j'
 
 That macro will start the line with a # symbol.
 Notice that it's just a sequence of vim commands. For ESC you must use ^[
+
+## Visual Mode
+- v: enter visual mode
+- V: visual mode in the line
+- Ctrl-v: visual mode by blocks
+
+Once you enter visual model, you can select blocks of text mobing with hjkl. 
+After that, you can apply c,d,r,c,I,A,J,u,U, <,> commands
+
+### Visual mode + text selections
+
+For example, to apply **indentation** in code files:
+- gv>
+
+Some useful settings:
+:set shiftwidth=8
+:set tabstop=8 (width of tab)
+:set noexpandtab  (to use spaces instead of tabs)
+
+:'<,'> s/what/new
+
+Selected area
+
+:'<,'> center [80]
+:'<,'> center 40
+
+Example. Add comment to some lines:
+
+Ctrl-v + select with j + i # + ESC
+
 ## Commands format:
 
 
