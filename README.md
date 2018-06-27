@@ -101,7 +101,56 @@ Search options:
 [range] can be 1,10
 Changing separators:
 - :%s#var#foo#g
+
+## Text Objects
+Text or code has certain limits like paragraphs and special symbols.
+In a text file, common text objects are:
+- w: word
+- s: sentence
+- p: paragraph
+- {}: brackets
+- []: square brackets
+- (): parenthesis
+- <>: tags/angular brackets
+- ": limits of a string
+
+We can use these objects with commands in order to insert, append, delete text, appplying
+this options:
+- a: all
+- i: inner
+
+<command> + [a|i] + <text-object>
+Where commans can be: d, c, r
+For example:
+- diw: delete a word
+- dap: delete all paragraph
+- dis: delete inner sentence.
+- da]: delete all with brackets
+- di]: delete what's inside the brackets
+- ci]: change what's inside the brackets
+- dat: delete a tag
+- dit: delete what's inside the tag
+
+## Macros
+Macros are use to recording and creating complex commands that can be invoked with a @
+- To start recording a macro use q + letter.
+- This will store the macro in @letter.
+- Then finish recording typing q again
+- To execute just type: @letter
+
+It's a good option to us 0 to beginm then j to finish in the next line.
+We can apply a macro to different lines:
+number@macro
+number,number@macro
+
+We can also store a macro in .vimrc:
+
+let @c='0i# ^[j'
+
+That macro will start the line with a # symbol.
+Notice that it's just a sequence of vim commands. For ESC you must use ^[
 ## Commands format:
+
 
 [number] operation motion
 4dw
