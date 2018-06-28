@@ -249,6 +249,25 @@ Commands:
 - :tabonly          close all tabs but current
 
 ## Settings
+To know all the options available, just do:
+:help options-list
+
+### .vimrc file
+Each line is a command
+
+```
+set ruler 
+```
+
+is like doing 
+
+```
+:set ruler
+```
+Comments are set using "
+"So, this is a vim comment
+
+in the editor
 
 This is how you set/unset/toggle in general
 :set rules
@@ -263,3 +282,24 @@ This is how you set/unset/toggle in general
 :colorscheme Ctrl-d
 
 Available colors: blue       darkblue   default    delek      desert     elflord    evening    industry   koehler    monokai    morning    murphy     pablo      peachpuff  ron        shine      slate      torte      zellner
+
+Color schemes are stored in $HOME/.vim/color
+
+### bunchi'o settings 
+- set history=50
+- set showcmd : show incomplete commands
+- set wildmenu : shows matching options when writing commands
+- set scrolloff=5 : when you do z+ ENTER to move the cursor 5 lines down
+- set hlsearch: search with highlight
+- set incsearch: incremental search
+- set ignorecase: for searches
+- set smartcas: ignore previous case if there are uppercase
+- set number: line numbers
+- set backup: toggles automatic backup
+- set bex=CHAR  set character for backup file extension
+- set lbr: set linebreak
+- set ai: copy indent from previous line
+- set si: smart indent, for coding
+- set bg=light|dark change background
+
+
