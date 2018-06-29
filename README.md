@@ -302,4 +302,55 @@ Color schemes are stored in $HOME/.vim/color
 - set si: smart indent, for coding
 - set bg=light|dark change background
 
+### map commands
 
+map key funcion
+- map <F2> 0i# This is a comment <CR>
+
+## Buffers
+An edited file is located in a buffer. Every file you open is stored in a buffer.
+
+```
+$ vim file1 file2 file3
+ or
+$ vim .js
+```
+
+Or in vim:
+:e file1 file2 file3
+
+Then in vim:
+:buffers
+:b
+:file[!]
+:buffers[!]
+:ls[!]
+
+- :b + d choose a buffer
+- :bn next in buffer
+- :bp previous in buffer
+- :bf first
+- :bl last
+- :bn!  changes withous saving!
+- :b# previous file
+- :qall! quit withous saving
+- :wall save all
+- :bd delete from buffer
+- :badd file   add to buffer
+- :%bd deletes all buffers
+
+### Operations in all  buffers
+- :bufdo commands for all buffers
+- :bufdi set numç
+- :bufdo %s/#/@/g
+- :bufdo %s/#/@/g | w   change and write!
+- :wall
+
+## Windows
+
+## Explorer and NERDTree
+
+By default, vim has an explorer
+:E (enter)
+
+NERDTree is a plugin that you could install with pathogen.vim (a plugin organizer) or on its own.
