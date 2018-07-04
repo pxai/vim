@@ -227,6 +227,19 @@ vim -p *.js
 
 - gt, :tabn  move to next tab
 - gT, :tabp  move to previous tab
+- 1gt, 2gt, ... ngt
+- :tabn
+- :tabp
+
+- :tabedit file
+- :tabfind file
+- :tabclose
+- :tabonly
+- :tabsplit
+- :tab ball show all in a tab
+- :tabfirst
+- :tablast
+- :tabn 0,1,2,3
 
 ## Registers
 Deleted/Cut content is saved in registers. You can reuse those parts.
