@@ -4,9 +4,10 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 "autocmd vimenter * NERDTree
 "map <C-n> :NERDTreeToggle<CR>
-set tabstop=4
-set softtabstop=0 noexpandtab
-set shiftwidth=4
+set tabstop=2
+set expandtab
+set softtabstop=0 
+set shiftwidth=2
 set number
 color darkblue 
 set bg=dark
@@ -26,3 +27,5 @@ map <F3>	0i<Tab>it('should do', () => {<CR><CR>});
 map <F2>	0idescribe('Tests smthg', () => {<CR><Esc><F3><CR><CR>});
 "map <F2>	0idescribe('Tests smthg', () => {<CR>it('should do', () => {<CR>});<CR>});
 
+" PLUGINS
+let g:airline#extensions#tabline#enabled = 1
