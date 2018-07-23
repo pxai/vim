@@ -29,3 +29,4 @@ map <F2>	0idescribe('Tests smthg', () => {<CR><Esc><F3><CR><CR>});
 
 " PLUGINS
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'jsformatter'
