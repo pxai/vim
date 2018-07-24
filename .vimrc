@@ -30,3 +30,25 @@ map <F2>	0idescribe('Tests smthg', () => {<CR><Esc><F3><CR><CR>});
 " PLUGINS
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'jsformatter'
+" You need this for triangles :
+" With powerfonts: https://github.com/powerline/fonts
+let g:airline_powerline_fonts = 1
+
+" ale for lint
+" Ale only works in Vim8
+let b:ale_fixers = ['prettier', 'eslint']
+let g:ale_sign_error = '~'
+let g:ale_sign_warning = '-'
+let g:airline#extensions#ale#enabled = 1
+
+" Syntastic, should work in Vim7
+let g:syntastic_javascript_checkers = ['eslint']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
