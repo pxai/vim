@@ -8,3 +8,15 @@ down up to the right right right leftleftleft and
 down up
 and then up
 to the right right right down down up then up
+
+Search with t/T
+You have to remember how to search in a line with t, for example try t+w to go to letters with w.
+With T, it will find the previous letter that matches.
+What else will you find in the next line. Try with other letters.
+
+Code
+This is super important. Learn to move through the code.
+<p>Change this</p>
+<div>Change this</div>
+<div><span>Or maybe this</span></div>
+<a href="https://google.com">or change this</a>
