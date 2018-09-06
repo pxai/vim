@@ -56,7 +56,12 @@ Combinations
 - c: change
 - cw: change word
 - cc: change entire line
+- c$: prepare to change until the end of the line
+- C: similar to previous
+- gUw : change word Uppercase
 
+### change case
+~ : changes uppercase one character
 - gUw : change word Uppercase
 - gUu : change all line Uppercase
 - guw : change word lowercase
@@ -65,11 +70,11 @@ Combinations
 ### Combine
 - G : combine lines
 - 3G: combine multiple
-- g J: combine lines without sares
+- g J: combine lines without spaces
 
 ## Search/Find/Replace
 ### Search
-- f{char}
+- f{char} (case sensitive)
 - F{char} : search backwards
 - ; look again forward
 - , look again, backwards
