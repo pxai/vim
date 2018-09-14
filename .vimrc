@@ -52,3 +52,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" syntax for ts: js
+au BufReadPost *.ts set syntax=javascript
+au BufReadPost *.tsx set syntax=javascript
