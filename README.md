@@ -365,7 +365,18 @@ Then in vim:
 - :wall
 
 ## Windows
-
+- :split new_file
+- Ctrl-w
+- Ctrl-w ctrl-w move to another window
+- Ctrl-w [hjkl] change to another
+- :vsplit file  vertical split
+- :sview split but readonly
+- :hide close window
+- :only keep only this open
+- :ls show current buffers
+- Ctrl-w_ : maximize current
+- Ctrl-w= make all equal size
+- 10 ctrl-w+ increase current by 10
 ## Explorer and NERDTree
 
 By default, vim has an explorer
