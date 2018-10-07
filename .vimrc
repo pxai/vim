@@ -4,7 +4,7 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 "autocmd vimenter * NERDTree
 "map <C-n> :NERDTreeToggle<CR>
-set tabstop=2
+set tabstop=4
 set expandtab
 set softtabstop=0 
 set shiftwidth=2

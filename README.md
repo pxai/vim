@@ -167,6 +167,11 @@ Once you enter visual model, you can select blocks of text mobing with hjkl.
 After that, you can apply c,d,r,c,I,A,J,u,U, <,> commands
 
 ### Visual mode + text selections
+Selection inside blocks, parameters, strings:
+- vi{, vi(, vi[, vi', vi"
+- va{, va(, va[, va', va" : select including symbols
+
+Then: dw, cw, etc..
 
 For example, to apply **indentation** in code files:
 - gv>

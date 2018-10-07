@@ -20,3 +20,11 @@ This is super important. Learn to move through the code.
 <div>Change this</div>
 <div><span>Or maybe this</span></div>
 <a href="https://google.com">or change this</a>
+
+Try this:
+function test (param1, param2) {
+  const text = 'try change this';
+    if (condition == 1) {
+        console.log("Change this");
+    }  
+}
