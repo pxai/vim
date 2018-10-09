@@ -12,6 +12,9 @@ set number
 color darkblue 
 set bg=dark
 
+"avoid spaces in new lines
+autocmd BufWritePre * %s/\s\+$//e
+
 " Searching
 set hlsearch
 set incsearch
